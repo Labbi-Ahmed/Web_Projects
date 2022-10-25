@@ -314,7 +314,6 @@
         </main>
         <footer>
              <div class="flex">
-
                 <small>Copyright &copy; 2019 All rights reserved | This template is made with &hearts; by <a href="https://colorlib.com" target="_blank">Colorlib</a>.</small>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -325,5 +324,13 @@
                 </ul>
             </div>   
         </footer>
+
+        <script>
+            document.getElementById("nav-toggle").addEventListener('click', function(){
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+
+        </script>
     </body>
 </html>
