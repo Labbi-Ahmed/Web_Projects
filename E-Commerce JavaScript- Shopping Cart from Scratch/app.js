@@ -57,6 +57,9 @@ class Products {
 
 // display products
 class UI {
+// active the shopNow button
+
+    // display products 
     displayProducts(products){
         let result = "";
         products.forEach(product => {
@@ -232,6 +235,10 @@ class UI {
     getSingleButton(id){
         return buttonsDOM.find(button => button.dataset.id === id);
     }
+
+    shopNowProducts(){
+        
+    }
 }
 
 
@@ -268,6 +275,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         Storage.savePeoducts(products);
     }).then(()=>{
         ui.getBagButtons();
+        ui.shopNowProducts();
         ui.cartLogic();
     });
 });
