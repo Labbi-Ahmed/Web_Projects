@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-
+html {
+  scroll-behavior: smooth;
+}
 :root{
     --primaryColor: #f09d51;
     --mainWhite: #fff;
